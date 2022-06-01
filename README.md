@@ -1,25 +1,34 @@
-# {package_name}
+# @fvilers/is-set
 
-{Library description}
+A TypeScript type guard that validates if the given value is a Set
 
 ## Installation
 
 ```
-npm install {package_name}
+npm install @fvilers/is-set
 ```
 
 or
 
 ```
-yarn add {package_name}
+yarn add @fvilers/is-set
 ```
 
 ## Usage
 
 ```ts
-// TODO: example usage of the library
+import isSet from "@fvilers/is-set";
+
+const variable: any = new Set();
+
+if (isSet(variable)) {
+  // From here, variable is strongly typed as a Set
+  console.log("Variable is a set with size of", set.size);
+} else {
+  console.log("Variable is not a set");
+}
 ```
 
-```ts
-// TODO: example result from the library usage
+```
+Variable is a set with size of 0
 ```

@@ -1,9 +1,9 @@
 {
-  "name": "typescript-lib-template",
+  "name": "@fvilers/is-set",
   "version": "0.0.0",
-  "description": "A TypeScript library template",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "description": "A TypeScript type guard that validates if the given value is a Set",
+  "main": "dist/src/isSet.js",
+  "types": "dist/src/isSet.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fvilers/typescript-lib-template.git"
+    "url": "git+https://github.com/fvilers/is-set.git"
   },
   "keywords": [
     "typescript",
@@ -20,9 +20,9 @@
   "author": "Fabian Vilers <fabian.vilers@dev-one.com> (https://www.dev-one.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fvilers/typescript-lib-template/issues"
+    "url": "https://github.com/fvilers/is-set/issues"
   },
-  "homepage": "https://github.com/fvilers/typescript-lib-template#readme",
+  "homepage": "https://github.com/fvilers/is-set#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-typescript": "^7.17.12",
