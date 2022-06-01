@@ -1,19 +1,11 @@
-import { jest } from "@jest/globals";
-import sayHello from "../src";
+import isSet from "../src/isSet";
 
-describe("sayHello", () => {
-  afterEach(() => {
-    jest.restoreAllMocks();
+describe("isSet", () => {
+  test("should return true for a set type", () => {
+    expect(isSet(new Set())).toBe(true);
   });
 
-  test("should say hello to the console", () => {
-    // Arrange
-    const spy = jest.spyOn(console, "log");
-
-    // Act
-    sayHello();
-
-    // Assert
-    expect(spy).toHaveBeenCalled();
+  test("should return false for a non set type", () => {
+    expect(isSet({})).toBe(false);
   });
 });
