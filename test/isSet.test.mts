@@ -1,4 +1,4 @@
-import isSet from "../src/isSet";
+import isSet from "../src/isSet.js";
 
 describe("isSet", () => {
   test("should return true for a set type", () => {
